@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Parc national des Hautes Gorges de la Rivière Malbaie</title>
+        <meta name="description" content="Projet final de Marianne Soucy sur le site des Hautes Gorges de la Rivière Malbaie, pour la deuxième session en conception et programmation de sites web au collège Maisonneuve">
+        <meta name="keywords" content="Création de sites web, CSS, HTML, front end, collège de Maisonneuve, Parc national des Hautes Gorges de la Rivière Malbaie">
+        <meta name="author" content="Marianne Soucy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Fichiers CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Fichier font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                
+                <!-- Navigation secondaire -->
+                <ul id="nav2nd">
+                    
+                    <!-- Menu burger -->
+                    <li id="burger" class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
+                        <div class="dropdown-content">
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Le Parc</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Histoire</a>
+                                    <a href="#">Emplacement</a>
+                                    <a href="#">Projets</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Activités</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Estivales</a>
+                                    <a href="#">Hivernales</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Hébergement</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Rustique</a>
+                                    <a href="#">Douillet</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Réservation</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Saison d'hiver</a>
+                                    <a href="#">Saison d'été</a>
+                                </div>
+                            </div>
+                            <div class="dropdown"><a href="#">Gallerie</a></div>
+                        </div>
+                    </li>
+                    <!-- Liens secondaires -->
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li id="darkRechercheLi"><div id="darkRechercheDiv"><i class="fa fa-search"></i><input type="text"></div></li>
+                    <li id="panier"><a href="#"><span>PANIER |</span><i class="fa fa-shopping-cart"></i></a><div id="nbrItems">0</div></li>
+                </ul>
+
+                <!-- Navigation pincipale -->
+                <div id="container_nav1st">
+                    
+                    <!-- Logo -->
+                    <img src="images/logoFinal.svg" alt="Logo du Parc national des Hautes Gorges de la Rivère Malbaie" id="logo">
+
+                    <ul id="nav1st">
+                        
+                        <!-- Liens primaires -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Le Parc</a>
+                            <div class="dropdown-content">
+                                <a href="#">Histoire</a>
+                                <a href="#">Emplacement</a>
+                                <a href="#">Projets</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Activités</a>
+                            <div class="dropdown-content">
+                                <a href="#">Estivales</a>
+                                <a href="#">Hivernales</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Hébergement</a>
+                            <div class="dropdown-content">
+                                <a href="#">Rustique</a>
+                                <a href="#">Douillet</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Réservation</a>
+                            <div class="dropdown-content">
+                                <a href="#">Saison d'hiver</a>
+                                <a href="#">Saison d'été</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Gallerie</a></li>
+                        
+                        <!-- Barre de recherche -->
+                        <li><div id="rechercheDiv"><i class="fa fa-search"></i><input type="text"></div></li>
+                    </ul>
+                </div><!-- Fin de container_nav1st -->
+
+                <!-- barre de recherche format extra small -->
+                <ul id="rechercheUlMobile">
+                    <li>
+                        <div id="rechercheDivMobile"><i class="fa fa-search"></i><input type="text"></div>
+                    </li>
+                </ul>
+                
+            </header>
+            
+            <!-- Image principale -->
+            <div id="imgPrincipale">
+                <img src="images/dawn4.jpg" alt="Levé du soleil de teinte rosé dans les montagnes">
+                
+                <!-- Slogan -->
+                <div class="textOver"><h3>Gumbo beet greens corn soko endive gumbo gourd.</h3></div>
+            </div>
+            
+            <main>
+                
+                <!--bulle de clavardage-->
+                <div id="chat">
+                    
+                    <h4><i class="fa fa-comments"></i>Clavarder</h4>
+                </div>
+                
+                <!-- Section pésentation -->
+                <h2>DÉCOUVRIR LE PARC</h2>
+                
+                <div class="firstSection">
+
+                    <!-- Tri pour reservation -->
+                    <div class="blocLeft">
+                        <form>
+                            <div>
+                                <h4>Réservez votre aventure !</h4>
+                                <p id="subInfo">(voir les choix disponibles)</p>
+                                
+                                <input type="radio" name="typeReservation" id="hebergement" value="Hebergement">
+                                <label for="hebergement">Hébergement</label>
+
+                                <input type="radio" name="typeReservation" id="activites" value="Activités">
+                                <label for="activites">Activités</label>
+                            </div>    
+
+                            <div class="formRow">
+                                <p>De :</p>
+                                <input type="date" name="date" id="dateDebut">
+                                <label for="dateDebut"><!--<i class="fa fa-calendar"></i>--></label>
+                            </div>
+  
+                            <div class="formRow">
+                                <p>À :</p>
+                                <input type="date" name="date" id="dateFin">
+                                <label for="dateFin"><!--<i class="fa fa-calendar"></i>--></label>
+                            </div>
+                            
+                            <div>
+                                <input class="submit" type="submit" value="Rechercher">
+                            </div>
+                        </form>
+                    </div><!--fin blocLeft-->
+                    
+                    <!-- Mission du parc -->
+                    <div class="blocRight">
+                        <div class="textBloc">
+                            <h3>Mission</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                            <!-- Lien secondaire "en savoir plus" -->
+                            <div class="enSavoirPlus">
+                                <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                            </div>
+                            
+                        </div><!--fin imgText-->
+                    </div><!-- fin blocRight -->
+                </div><!-- Fin section présentation -->
+                
+                <!-- Affichage des cartes rabais -->
+                <div class="deuxiemeSection">
+                    <h2>FORFAITS</h2>
+
+
+                    <div id="carousel">
+                        
+                        <!--carte #1-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/fatherDaughterBoat2.jpg" alt="Un père et sa petite fille sur un bateau au milieu d'un lac entre des montagnes">
+                                    </div>   
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeBoating" src="images/water-solid.svg" alt="Icone de vagues">
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                                            
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">225$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+
+                        <!--carte #2-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/viaFerrata2.jpg" alt="Jeune adolescente faisant de l'escalade sur une paroie rocheuse">
+                                    </div>   
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeHiking" src="images/hiking-solid.svg" alt="Icone de randonnée pédestre">
+                                        
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                                            
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">127$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+                        
+                        <!--carte #3-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/tent.jpg" alt="Jambes dépassant d'une tente de camping ouverte vers l'horizon">
+                                    </div>   
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeCamping" src="images/campground-solid.svg" alt="Icone d'une tente de camping">
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                                            
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">79$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+
+                        <!--carte #4-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/fatherDaughterBoat2.jpg"
+                                            alt="Un père et sa petite fille sur un bateau au milieu d'un lac entre des montagnes">
+                                    </div>
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeBoating" src="images/water-solid.svg" alt="Icone de vagues">
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me
+                                            pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                        
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">225$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+
+                        <!--carte #5-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/viaFerrata2.jpg" alt="Jeune adolescente faisant de l'escalade sur une paroie rocheuse">
+                                    </div>
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeHiking" src="images/hiking-solid.svg" alt="Icone de randonnée pédestre">
+                        
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me
+                                            pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                        
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">127$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+
+                        <!--carte #6-->
+                        <div>
+                            <div class="carteAvecSubmit">
+                                <div class="carte">
+                                    <div class="imgCarte">
+                                        <img src="images/tent.jpg" alt="Jambes dépassant d'une tente de camping ouverte vers l'horizon">
+                                    </div>
+                                    <div class="iconeCarte">
+                                        <img class="carteIconeCamping" src="images/campground-solid.svg" alt="Icone d'une tente de camping">
+                                    </div>
+                                    <div class="texteCarte">
+                                        <h3>Cat ipsum</h3>
+                                        <p>Cat ipsum dolor sit amet, pee in human's bed until he cleans the litter box. Lick butt pet me pet me
+                                            pet me pet me, bite, scratch.</p>
+                                    </div>
+                                    <div class="bottomCard">
+                                        <div class="enSavoirPlus">
+                        
+                                            <a href="#"><i class="fa fa-angle-double-right"></i>en savoir plus</a>
+                                        </div>
+                                        <h2 class="tarif">79$</h2>
+                                    </div>
+                                </div><!-- fin carte -->
+                                <input class="submitCarte" type="submit" value="Réserver">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+            </main>
+            
+            <footer>
+                
+                <!-- Contenu du bloc de navigation -->
+                <div id="container_navFooter">
+                    
+                    <!-- Logo -->
+                    <img src="images/logoFinalSansTexte.svg" alt="Logo sans texte du Parc national des Hautes Gorges de la Rivière Malbaie" id="logoFoot">
+                    
+                    <!-- Contenu textuel -->
+                    <div id="container_textFooter">
+                        <!-- <h4>Acces Rapides</h4> -->
+                        
+                        <!-- Ensemble des liens -->
+                        <div id="navFooter">
+                            <ul id="navFooterLeft">
+                                <li><a href="#">Plan du site</a></li>
+                                <li><a href="#">Emploi</a></li>
+                                <li><a href="#">Horaire</a></li>
+                                <li><a href="#">Nous Joindre</a><span>| 418-123-1456</span></li>
+                            </ul>
+                            
+                            <!-- Reseaux sociaux -->
+                            <ul id="navFooterRight">
+                                <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- Fin de container_textFooter -->
+                </div><!-- Fin de container_navFooter --> 
+            </footer>
+        </div><!-- fin du wrapper -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+        <script src="slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    variableWidth: true,
+                    variableHeight: true,
+                    speed: 300,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1144,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 440,
+                            settings: {
+                                arrows: false
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
